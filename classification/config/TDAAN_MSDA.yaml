@@ -1,0 +1,24 @@
+# Backbone
+backbone: resnet50 
+
+# Transfer loss related
+transfer_loss_weight: 0.2
+transfer_loss: tblmmd
+
+# Optimizer related
+lr: 0.01
+weight_decay: 5e-4
+momentum: 0.9
+lr_scheduler: True
+lr_gamma: 0.0002 #0.0003
+lr_decay: 0.75
+
+# Training related
+n_iter_per_epoch: 200
+n_epoch: 20
+warmup_epoch: 4
+classes_per_iter: 10
+
+# Others
+seed: 1
+num_workers: 1

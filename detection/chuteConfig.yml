@@ -1,0 +1,20 @@
+# input video directory
+input_dir: "test_vid"
+# output directory
+output_dir: "test_out"
+# path to camera calibration file
+calib_path: "cameraParamBEV-alpha-0.2.xml"
+
+det_model_path: "yolov8_chute.pt"
+
+save_vid: True
+
+det_thresh: 0.2
+
+class_path: chute2022.pth
+
+segment_model: "h"
+# Whether to perform segmentation or just visualize detection and classification results
+segment: True
+# number of points for midline
+midline_pts: 10
